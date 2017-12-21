@@ -1,6 +1,10 @@
+/*
+ * CSS cho trang đăng nhập
+ */
+
 body {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: #eee;
 }
 

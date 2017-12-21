@@ -1,7 +1,6 @@
-body {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+/*
+ * Điều chỉnh style của các ô Grid
+ */
 
 h3 {
     margin-top: 2rem;
@@ -9,6 +8,8 @@ h3 {
 
 .row {
     margin-bottom: 1rem;
+    -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 .row .row {
@@ -17,10 +18,7 @@ h3 {
 }
 
 [class*="col-"] {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: rgba(117, 59, 204, 0.075);
-    /* border: 1px solid rgba(86, 61, 124, .2); */
+    border: 2px transparent rgba(86, 61, 124, .2);
 }
 
 hr {

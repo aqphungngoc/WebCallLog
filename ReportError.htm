@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.min.css">
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
-    <link href="css/MainUI.css" rel="stylesheet">
+    <link href="css/CoverPage.css" rel="stylesheet">
+    <link href="css/ReportError.css" rel="stylesheet">
     <link href="css/Grid.css" rel="stylesheet">
-
     <!-- Making BackGround image -->
 
 </head>
@@ -32,10 +32,10 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="StartPage.htm">Trang chủ <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="ReportError.htm">Báo lỗi</a>
                 </li>
                 <li class="nav-item">
@@ -61,24 +61,35 @@
 
     <div class="container">
         <div class="starter-template">
-            <div class="jumbotron">
-                <h1 class="display-5">Máy bạn gặp vấn đề?</h1>
-                <p class="lead"> Hãy gửi thông báo lỗi và mô tả chi tiết cho chúng tôi</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button" id="mkErorrBtn">Báo lỗi ngay!</a></p>
-            </div>
+            <h1>CallLogIT</h1>
         </div>
 
         <div class="row">
-            <div class="col-md-4">Lỗi đã báo
-
+            <div class="col-md-9">
+                <form class="form-report">
+                    <h5>Gửi mô tả chi tiết lỗi cho chúng tôi!</h5>
+                    <label for="ErrorTitle">Tiêu đề:</label>
+                    <textarea id="errortitle" class="form-control" rows="1" placeholder="Tiêu đề" required autofocus></textarea>
+                    <input id="errortitle" class="form-control" placeholder="Gắn thẻ lỗi">
+                    <label for="ErrorComment">Mô tả lỗi:</label>
+                    <textarea class="form-control" rows="8" id="errorcomment" placeholder="Mô tả"></textarea>
+                    <button class="btn btn-lg btn-primary" type="submit">Báo lỗi</button>
+                </form>
             </div>
-            <div class="col-md-4">Các lỗi đã sửa
-
+            <div class="col-md-3">
+                <h5>Gắn thẻ các lỗi thường gặp</h5>
+                <div class="tag-input-menu">
+                    <input type="button" class="btn btn-warning custom-btn" value="Lỗi 1" id="Er1">
+                    <input type="button" class="btn btn-warning custom-btn" value="Lỗi 2">
+                    <input type="button" class="btn btn-danger custom-btn" value="Lỗi 3">
+                    <input type="button" class="btn btn-info custom-btn" value="Lỗi 4">
+                    <input type="button" class="btn btn-info custom-btn" value="Khác..." id="other">
+                </div>
             </div>
-            <div class="col-md-4">Chat trực tuyến
 
-            </div>
         </div>
+    </div>
+    </div>
     </div>
     <!-- /.container -->
     <!-- Bootstrap core JavaScript
@@ -89,6 +100,7 @@
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 
 </html>
