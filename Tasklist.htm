@@ -15,6 +15,7 @@
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/CoverPage.css" rel="stylesheet">
+    <link href="css/Grid.css" rel="stylesheet">
 
     <!-- Making BackGround image -->
 
@@ -32,13 +33,13 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="StartPage.htm">Trang chủ <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="ReportError.htm">Báo lỗi</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="Tasklist.htm">DS yêu cầu</a>
                 </li>
             </ul>
@@ -63,20 +64,14 @@
             <div class="cover-container">
 
                 <div class="masthead clearfix">
-                    <!-- <div class="inner">
-                        <h3 class="masthead-brand">Cover</h3>
-                        <nav class="nav nav-masthead">
-                            <a class="nav-link active" href="#">Home</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Contact</a>
-                        </nav>
-                    </div> -->
                 </div>
 
                 <div class="inner cover">
-                    <h1 class="cover-heading">Máy bạn gặp vấn đề?</h1>
-                    <p class="lead"> Hãy gửi thông báo lỗi và mô tả chi tiết cho chúng tôi</p>
-                    <p class="lead"><a class="btn btn-lg btn-primary" href="ReportError.htm" role="button" id="mkErorrBtn">Báo lỗi ngay!</a></p>
+                    <ul class="list-group">
+                        <a class="list-group-item list-group-item-success" href="#">Lỗi đã sửa xong</a>
+                        <a class="list-group-item list-group-item-info" href="#">Việc đang làm</a>
+                        <a class="list-group-item list-group-item-danger" href="#">Lỗi mới, yêu cầu của khách</a>
+                    </ul>
                 </div>
 
                 <div class="mastfoot">

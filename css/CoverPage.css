@@ -6,9 +6,13 @@
 /* Links */
 
 a,
+a:hover {
+    color: darkslategrey;
+}
+
 a:focus,
 a:hover {
-    color: #fff;
+    color: cornflowerblue;
 }
 
 
