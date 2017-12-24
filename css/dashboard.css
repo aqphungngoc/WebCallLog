@@ -85,7 +85,7 @@ h1 {
 }
 
 .card {
-    background-color: dimgray
+    background-color: dimgray;
 }
 
 .maintasklist {
@@ -95,9 +95,9 @@ h1 {
 
 /*==Thiết lập cột cho thẻ==*/
 
-.container {
+.cardcontent {
     border: transparent;
-    overflow: auto;
+    clear: both;
 }
 
 
