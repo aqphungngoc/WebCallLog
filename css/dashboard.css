@@ -83,3 +83,45 @@ h1 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+.card {
+    background-color: dimgray
+}
+
+.maintasklist {
+    padding-top: 1.5rem;
+}
+
+
+/*==Thiết lập cột cho thẻ==*/
+
+.container {
+    border: transparent;
+    overflow: auto;
+}
+
+
+/*==cột #post==*/
+
+#username {
+    border-right: 1px solid;
+    float: left;
+}
+
+
+/*==cột #sidebar==*/
+
+#errortitle {
+    border-right: 1px solid;
+    float: left;
+}
+
+#state {
+    border-right: 1px solid;
+    float: right;
+}
+
+#ordereddate {
+    border-right: 1px solid;
+    float: right;
+}

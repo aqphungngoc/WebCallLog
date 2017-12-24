@@ -58,64 +58,66 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2 hidden-xs-down nav">
-                <ul class="nav flex-column">
+            <div class="col-sm-3 col-md-2 hidden-xs-down nav">
+                <ul class="nav flex-column sidebar">
+                    <div class="list-group">
+                        <div class="card">
+                            <div id="accordion">
+                                <div>
+                                    <a class="card-header card-link list-group-item list-group-item-success" data-parent="#accordion" href="#"><b>Tất cả công việc</b></a>
+                                </div>
+                                <div>
+                                    <a class="card-header card-link list-group-item list-group-item-success" data-parent="#accordion" href="#"><b>Công việc gần đây</b></a>
+                                </div>
+                                <div>
+                                    <a class="card-header card-link list-group-item list-group-item-info" data-toggle="collapse" data-parent="#accordion" href="#taskmenu1">
+                                        <b>Việc tôi yêu cầu</b>
+                                    </a>
+                                </div>
+                                <div id="taskmenu1" class="collapse">
+                                    <div class="card-body">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">All</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">New</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Inprocess</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Resolved</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Outofdate</a>
+                                        </li>
 
-                    <div id="accordion">
-                        <div>
-                            <a class="card-header card-link list-group-item list-group-item-success" data-parent="#accordion" href="#"><b>Tất cả công việc</b></a>
-                        </div>
-                        <div>
-                            <a class="card-header card-link list-group-item list-group-item-success" data-parent="#accordion" href="#"><b>Công việc gần đây</b></a>
-                        </div>
-                        <div>
-                            <a class="card-header card-link list-group-item list-group-item-info" data-toggle="collapse" data-parent="#accordion" href="#taskmenu1">
-                                <b>Việc tôi yêu cầu</b>
-                            </a>
-                        </div>
-                        <div id="taskmenu1" class="collapse">
-                            <div class="card-body">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">All</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">New</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Inprocess</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Resolved</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Outofdate</a>
-                                </li>
-
-                            </div>
-                        </div>
-                        <div>
-                            <a class="card-header card-link list-group-item list-group-item-danger" data-toggle="collapse" data-parent="#accordion" href="#taskmenu2">
-                                <b>Việc tôi được giao</b>
-                            </a>
-                        </div>
-                        <div id="taskmenu2" class="collapse">
-                            <div class="card-body">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">All</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">New</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Inprocess</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Resolved</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Outofdate</a>
-                                </li>
-
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="card-header card-link list-group-item list-group-item-danger" data-toggle="collapse" data-parent="#accordion" href="#taskmenu2">
+                                        <b>Việc tôi được giao</b>
+                                    </a>
+                                </div>
+                                <div id="taskmenu2" class="collapse">
+                                    <div class="card-body">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">All</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">New</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Inprocess</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Resolved</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Outofdate</a>
+                                        </li>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -124,17 +126,79 @@
 
             </div>
 
-            <div class="col-sm-10">
+            <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
                 <ul class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#" id="">Việc đc thông báo đã làm xong</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Việc mà bên sửa đang làm</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Việc đc thông báo đã làm xong</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Việc mà bên sửa đang làm</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Việc đc thông báo đã làm xong</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Việc mà bên sửa đang làm</a>
-                    <a class="list-group-item list-group-item-action" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
+                    <div id="tasklist" class="maintasklist">
+                        <div class="card">
+                            <!-- id của thẻ lỗi -->
+                            <div id="task1">
+                                <!-- thanh hiển thị của cái thẻ lỗi đó -->
+                                <a class="card-header card-link list-group-item list-group-item-action" data-parent="#tasklist" data-toggle="collapse" href="#collapse1">
+                                    <div id="content" class="container">
+                                        <div id="username">username</div>
+                                        <div id="errortitle">Tên lỗi</div>
+                                        <div id="state">Trạng thái</div>
+                                        <div id="ordereddate">ngày yêu cầu</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapse1" class="collapse show">
+                                <!-- Nội dung thẻ lỗi có gì -->
+                                <div class="card-body">
+                                    Chỗ này tí tính
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="task2">
+                                <!-- thanh hiển thị của cái thẻ lỗi đó -->
+                                <a class="card-header card-link list-group-item list-group-item-action" data-parent="#tasklist" data-toggle="collapse" href="#collapse2">
+                                    Tiêu đề công việc thứ 2
+                                </a>
+                            </div>
+                            <div id="collapse2" class="collapse">
+                                <!-- Nội dung thẻ lỗi có gì -->
+                                <div class="card-body">
+                                    Chỗ này tính sau <br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="task3">
+                                <a class="card-header card-link list-group-item list-group-item-action" data-parent="#tasklist" data-toggle="collapse" href="#collapse3">
+                                            Tiêu đề công việc thứ 3
+                                        </a>
+                            </div>
+                            <div id="collapse3" class="collapse">
+                                <div class="card-body">
+                                    Chỗ này tí tính<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef<br>abcdef
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="task3">
+                                <a class="card-header card-link collapsed list-group-item list-group-item-action" data-parent="#tasklist" data-toggle="collapse" href="#collapse3">
+                                                Tiêu đề công việc thứ 3
+                                            </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="task3">
+                                <a class="card-header card-link collapsed list-group-item list-group-item-action" data-parent="#tasklist" data-toggle="collapse" href="#collapse3">
+                                   Tiêu đề công việc thứ 3
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="task3">
+                                <a class="card-header card-link collapsed list-group-item list-group-item-action" data-parent="#tasklist" data-toggle="collapse" href="#collapse3">
+                                    Tiêu đề công việc thứ 3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </ul>
             </div>
