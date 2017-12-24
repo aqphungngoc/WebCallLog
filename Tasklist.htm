@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Nhận và sửa chữa thiết bị lỗi">
     <meta name="author" content="AQ,VA,NS">
     <link rel="icon" href="icon\Icon1.ico">
 
-    <title>Welcome to Call Log</title>
+    <title>Yêu cầu sửa</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.min.css">
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/CoverPage.css" rel="stylesheet">
-    <link href="css/Grid.css" rel="stylesheet">
-
+    <link href="css/dashboard.css" rel="stylesheet">
     <!-- Making BackGround image -->
 
 </head>
@@ -56,45 +56,56 @@
             </ul>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tất cả </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gần đây</a>
+                </li>
+                <ul class="nav nav-pills flex-column">
+                    <b>Những lỗi tôi vừa báo</b>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tất cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gần đây</a>
+                    </li>
 
-    <div class="site-wrapper">
+                </ul>
 
-        <div class="site-wrapper-inner">
+                <ul class="nav nav-pills flex-column">
+                    <b> Những lỗi đang được sửa</b>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tất cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gần đây</a>
+                    </li>
 
-            <div class="cover-container">
+                </ul>
+                <ul class="nav nav-pills flex-column">
+                    <b> Lỗi đã thực hiện xong</b>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tất cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gần đây</a>
+                    </li>
 
-                <div class="masthead clearfix">
-                </div>
+                </ul>
+            </nav>
 
-                <div class="inner cover">
-                    <ul class="list-group">
-                        <a class="list-group-item list-group-item-success" href="#">Lỗi đã sửa xong</a>
-                        <a class="list-group-item list-group-item-info" href="#">Việc đang làm</a>
-                        <a class="list-group-item list-group-item-danger" href="#">Lỗi mới, yêu cầu của khách</a>
-                    </ul>
-                </div>
-
-                <div class="mastfoot">
-                    <!-- cuối trang chủ -->
-                </div>
-
-            </div>
-
+            <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+                <ul class="list-group">
+                    <a class="list-group-item list-group-item-success" href="#" id="">Việc đc thông báo đã làm xong</a>
+                    <a class="list-group-item list-group-item-info" href="#" id="">Việc mà bên sửa đang làm</a>
+                    <a class="list-group-item list-group-item-danger" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
+                </ul>
+            </main>
         </div>
-        <script type='text/javascript'>
-            window._sbzq || function(e) {
-                e._sbzq = [];
-                var t = e._sbzq;
-                t.push(["_setAccount", 74440]);
-                var n = e.location.protocol == "https:" ? "https:" : "http:";
-                var r = document.createElement("script");
-                r.type = "text/javascript";
-                r.async = true;
-                r.src = n + "//static.subiz.com/public/js/loader.js";
-                var i = document.getElementsByTagName("script")[0];
-                i.parentNode.insertBefore(r, i)
-            }(window);
-        </script>
     </div>
 
     <!-- Bootstrap core JavaScript
