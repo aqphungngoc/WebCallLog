@@ -92,6 +92,10 @@ h1 {
     padding-top: 1.5rem;
 }
 
+.bg-faded {
+    background-color: rgba(105, 105, 105, 0.8);
+}
+
 
 /*==Thiết lập cột cho thẻ==*/
 
