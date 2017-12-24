@@ -58,53 +58,86 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tất cả </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gần đây</a>
-                </li>
-                <ul class="nav nav-pills flex-column">
-                    <b>Những lỗi tôi vừa báo</b>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tất cả</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gần đây</a>
-                    </li>
+            <div class="col-sm-2 hidden-xs-down nav">
+                <ul class="nav flex-column">
 
+                    <div id="accordion">
+                        <div>
+                            <a class="card-header card-link list-group-item list-group-item-success" data-parent="#accordion" href="#"><b>Tất cả công việc</b></a>
+                        </div>
+                        <div>
+                            <a class="card-header card-link list-group-item list-group-item-success" data-parent="#accordion" href="#"><b>Công việc gần đây</b></a>
+                        </div>
+                        <div>
+                            <a class="card-header card-link list-group-item list-group-item-info" data-toggle="collapse" data-parent="#accordion" href="#taskmenu1">
+                                <b>Việc tôi yêu cầu</b>
+                            </a>
+                        </div>
+                        <div id="taskmenu1" class="collapse">
+                            <div class="card-body">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">New</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inprocess</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resolved</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Outofdate</a>
+                                </li>
+
+                            </div>
+                        </div>
+                        <div>
+                            <a class="card-header card-link list-group-item list-group-item-danger" data-toggle="collapse" data-parent="#accordion" href="#taskmenu2">
+                                <b>Việc tôi được giao</b>
+                            </a>
+                        </div>
+                        <div id="taskmenu2" class="collapse">
+                            <div class="card-body">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">New</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inprocess</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resolved</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Outofdate</a>
+                                </li>
+
+                            </div>
+                        </div>
+                    </div>
                 </ul>
 
-                <ul class="nav nav-pills flex-column">
-                    <b> Những lỗi đang được sửa</b>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tất cả</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gần đây</a>
-                    </li>
 
-                </ul>
-                <ul class="nav nav-pills flex-column">
-                    <b> Lỗi đã thực hiện xong</b>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tất cả</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gần đây</a>
-                    </li>
+            </div>
 
-                </ul>
-            </nav>
-
-            <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+            <div class="col-sm-10">
                 <ul class="list-group">
-                    <a class="list-group-item list-group-item-success" href="#" id="">Việc đc thông báo đã làm xong</a>
-                    <a class="list-group-item list-group-item-info" href="#" id="">Việc mà bên sửa đang làm</a>
-                    <a class="list-group-item list-group-item-danger" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Việc đc thông báo đã làm xong</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Việc mà bên sửa đang làm</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Việc đc thông báo đã làm xong</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Việc mà bên sửa đang làm</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Việc đc thông báo đã làm xong</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Việc mà bên sửa đang làm</a>
+                    <a class="list-group-item list-group-item-action" href="#" id="">Lỗi tôi vừa gửi và chưa được xủ lý</a>
+
                 </ul>
-            </main>
+            </div>
         </div>
     </div>
 

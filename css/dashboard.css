@@ -25,6 +25,11 @@ h1 {
  * Sidebar
  */
 
+[class*="col-"] {
+    border: 2px transparent rgba(86, 61, 124, .2);
+    background-blend-mode: darken
+}
+
 .sidebar {
     position: fixed;
     top: 51px;
