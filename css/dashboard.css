@@ -133,3 +133,22 @@ h1 {
     border-right: 1px solid;
     float: right;
 }
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating>span {
+    size: 2rem;
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    color: rgb(255, 255, 0);
+}
+
+.rating>span:hover:before,
+.rating>span:hover~span:before {
+    content: "\2605";
+    position: absolute;
+}
