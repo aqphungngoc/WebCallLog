@@ -8,19 +8,17 @@
     <meta name="author" content="AQ,VA,NS">
     <link rel="icon" href="icon\Icon1.ico">
 
-    <title>Trang chủ</title>
+    <title>Tùy chỉnh tài khoản</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.min.css">
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <link rel="stylesheet" href="tether-1.3.3\dist\css\tether.min.css">
+
     <link href="font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet" />
     <link href="starrr-gh-pages\dist\starrr.css" rel="StyleSheet" type="text/css">
     <!-- Custom styles for this template -->
     <link href="css/CoverPage.css" rel="stylesheet">
-    <link href="css/ReportError.css" rel="stylesheet">
-    <link href="css/Grid.css" rel="stylesheet">
-    <link href="jquery/css/tagsinput.css" rel="stylesheet" type="text/css">
     <link href="css/Notification.css" rel="StyleSheet" type="text/css">
     <script type="text/javascript" src="jquery/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/onclicknotify.js"></script>
@@ -29,6 +27,7 @@
 </head>
 
 <body>
+
     <!-- Phần thanh thao tác chính này phải giống nhau ở mọi trang giao diện, nếu chỉnh sửa 1 trang thì phải cop paste vào các trang khác -->
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +41,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="StartPage.htm">Trang chủ <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="ReportError.htm">Báo lỗi</a>
                 </li>
                 <li class="nav-item">
@@ -75,43 +74,47 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="starter-template">
-            <h1>CallLogIT</h1>
-        </div>
-
-        <div class="row sitewrapper">
-            <div class="col-md-9">
-                <form class="form-report">
-                    <h5>Gửi mô tả chi tiết lỗi cho chúng tôi!</h5>
-                    <label for="ErrorTitle">Tiêu đề:</label>
-                    <textarea id="errortitle" class="form-control" rows="1" placeholder="Tiêu đề" required autofocus></textarea>
-                    <input type="text" id="errortitle" class="form-control" placeholder="Gắn thẻ lỗi" data-role="tagsinput" value="jQuery,Script,Net">
-                    <label for="ErrorComment">Mô tả lỗi:</label>
-                    <textarea class="form-control" rows="8" id="errorcomment" placeholder="Mô tả"></textarea>
-                    <button class="btn btn-lg btn-primary" type="submit">Báo lỗi</button>
-                </form>
-            </div>
-            <div class="col-md-3">
-                <h5>Gắn thẻ các lỗi thường gặp</h5>
-                <div class="tag-input-menu">
-                    <input type="button" class="btn btn-warning custom-btn" value="Lỗi 1" id="Er1">
-                    <input type="button" class="btn btn-warning custom-btn" value="Lỗi 2">
-                    <input type="button" class="btn btn-danger custom-btn" value="Lỗi 3">
-                    <input type="button" class="btn btn-info custom-btn" value="Lỗi 4">
-                    <input type="button" class="btn btn-info custom-btn" value="Khác..." id="other">
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
                 </div>
+                <div class="inner cover">
+                    <div class="jumbotron">
+                        <div class="container" id="userinfo">
+                            <h3 class="row">Đội thực hiện:</h3>
+                            <hr>
+                            <div class="row lead">
+                                <div class="col-sm-4">Lưu Việt Anh </div>
+                                <div class="col-sm-8" id="username">back-end</div>
+                            </div>
+                            <div class="row lead">
+                                <div class="col-sm-4">Phùng Ngọc Anh Quân</div>
+                                <div class="col-sm-8" id="name"> front-end
+
+                                </div>
+                            </div>
+                            <div class="row lead">
+                                <div class="col-sm-4">Nguyễn Ngọc Sáng</div>
+                                <div class="col-sm-8" id="password"> Chat trực tuyến, thông báo
+                                </div>
+                            </div>
+                            <p>
+                                <a class="btn btn-lg btn-secondary" href="Tasklist.htm" role="button" id="savebutton">Thoát</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mastfoot">
+                    <!-- cuối trang chủ -->
+                </div>
+
             </div>
-
-
-
         </div>
     </div>
-    </div>
-    </div>
-    <!-- /.container -->
+
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+            ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="jquery\js\jquery-3.2.1.min.js"></script>
@@ -119,9 +122,14 @@
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <script src="starrr-gh-pages\dist\starrr.js"></script>
     <script src="js\starrating.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
-    <script src="jquery\js\tagsinput.js"></script>
+
+
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -137,10 +145,6 @@
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-
 </body>
 
 </html>

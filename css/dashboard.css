@@ -40,7 +40,6 @@ h1 {
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
-    border-right: 1px solid #eee;
 }
 
 
@@ -116,7 +115,6 @@ h1 {
 /*==cột #post==*/
 
 #username {
-    border-right: 1px solid;
     float: left;
 }
 
