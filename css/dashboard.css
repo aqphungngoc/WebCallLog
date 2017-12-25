@@ -93,11 +93,15 @@ h1 {
 }
 
 .bg-faded {
-    background-color: rgba(105, 105, 105, 0.8);
+    background-color: rgb(37, 32, 32);
 }
 
 .bg-taskmenu {
-    background-color: rgb(49, 39, 39);
+    background-color: rgb(37, 32, 32);
+}
+
+.bg-submenu {
+    background-color: rgb(58, 49, 49);
 }
 
 
@@ -153,7 +157,6 @@ h1 {
     position: absolute;
 }
 
-#modaltitle,
-#modalbody {
-    color: black;
+#stars-existing {
+    color: rgb(178, 238, 14);
 }

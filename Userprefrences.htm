@@ -8,7 +8,7 @@
     <meta name="author" content="AQ,VA,NS">
     <link rel="icon" href="icon\Icon1.ico">
 
-    <title>Welcome to Call Log</title>
+    <title>Tùy chỉnh tài khoản</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.min.css">
@@ -19,6 +19,7 @@
     <link href="starrr-gh-pages\dist\starrr.css" rel="StyleSheet" type="text/css">
     <!-- Custom styles for this template -->
     <link href="css/CoverPage.css" rel="stylesheet">
+    <link href="css/Grid.css" rel="stylesheet">
     <link href="css/Notification.css" rel="StyleSheet" type="text/css">
     <script type="text/javascript" src="jquery/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/onclicknotify.js"></script>
@@ -38,7 +39,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="StartPage.htm">Trang chủ <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -61,7 +62,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
+                    <a class="nav-link dropdown-toggle" href="" id="username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="Userprefrences.htm">Tùy chỉnh</a>
                         <a class="dropdown-item" href="Login.htm">Đăng xuất
@@ -91,9 +92,45 @@
                 </div>
 
                 <div class="inner cover">
-                    <h1 class="cover-heading">Máy bạn gặp vấn đề?</h1>
-                    <p class="lead"> Hãy gửi thông báo lỗi và mô tả chi tiết cho chúng tôi</p>
-                    <p class="lead"><a class="btn btn-lg btn-primary" href="ReportError.htm" role="button" id="mkErorrBtn">Báo lỗi ngay!</a></p>
+                    <div class="jumbotron">
+                        <div class="container" id="userinfo">
+                            <h3 class="row">Tùy chỉnh tài khoản</h3>
+                            <hr>
+                            <div class="row lead">
+                                <div class="col-sm-4">Tên đăng nhập: </div>
+                                <div class="col-sm-8" id="username">Username</div>
+                            </div>
+                            <div class="row lead">
+                                <div class="col-sm-4">Tên sử dụng:</div>
+                                <div class="col-sm-8" id="name"> boy_cute_pro_vip
+                                    <button class="btn btn-sm btn-primary" role="button" data-toggle="modal" data-target="#changename">
+                                        Sửa lại
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row lead">
+                                <div class="col-sm-4">Mật khẩu</div>
+                                <div class="col-sm-8" id="password">
+                                    <button class="btn btn-sm btn-primary" role="button" data-toggle="modal" data-target="#changepassword">
+                                        Sửa mật khẩu
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row lead">
+                                <div class="col-sm-4">Quyền truy cập:</div>
+                                <div class="col-sm-8" id="accessright"> Thợ sửa chữa</div>
+                            </div>
+                            <div class="row lead">
+                                <div class="col-sm-4">Vị trí máy:</div>
+                                <div class="col-sm-8" id="locate"> Máy 4 tầng 13</div>
+                            </div>
+                            <hr>
+                            <p>
+                                <a class="btn btn-lg btn-success" href="#" role="button" id="savebutton">Lưu lại</a>
+                                <a class="btn btn-lg btn-secondary" href="#" role="button" id="savebutton">Thoát</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mastfoot">
@@ -101,7 +138,66 @@
                 </div>
 
             </div>
-
+            <!-- Đổi mk -->
+            <div class="modal fade" id="changepassword" tabindex="-1" role="dialog" aria-labelledby="Phản hồi" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modaltitle">Đổi mật khẩu</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                        </div>
+                        <div class="modal-body" id="modalbody">
+                            <div class="container">
+                                <div class="row">
+                                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu cũ">
+                                </div>
+                                <div class="row">
+                                    <input type="password" class="form-control" id="newpassword" placeholder="Mật khẩu mới">
+                                </div>
+                                <div class="row">
+                                    <input type="password" class="form-control" id="renewpassword" placeholder="Nhập lại mật khẩu">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Đồng ý</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Đổi tên ingame -->
+            <div class="modal fade" id="changename" tabindex="-1" role="dialog" aria-labelledby="Phản hồi" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modaltitle">Đổi tên đang dùng</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" id="modalbody">
+                            <div class="container">
+                                <div class="row lead">
+                                    <div class="col-xs-5">Tên đang dùng:</div>
+                                    <div class="col-xs-7" id="name">
+                                        boy_cute_pro_vip
+                                    </div>
+                                </div>
+                                <div class="row lead">
+                                    <input type="text" class="form-control" id="newname" placeholder="Tên mới">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Đồng ý</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type='text/javascript'>
             window._sbzq || function(e) {

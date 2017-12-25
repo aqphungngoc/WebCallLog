@@ -8,8 +8,8 @@ h3 {
 
 .row {
     margin-bottom: 1rem;
-    -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
-    box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
+    /* -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5rem rgba(0, 0, 0, .5); */
 }
 
 .row .row {
@@ -18,7 +18,7 @@ h3 {
 }
 
 [class*="col-"] {
-    border: 2px transparent rgba(86, 61, 124, .2);
+    border: 1px transparent rgba(86, 61, 124, .2);
 }
 
 hr {
