@@ -15,7 +15,9 @@
     <script src="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/CoverPage.css" rel="stylesheet">
-
+    <link href="css/Notification.css" rel="StyleSheet" type="text/css">
+    <script type="text/javascript" src="jquery/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/onclicknotify.js"></script>
     <!-- Making BackGround image -->
 
 </head>
@@ -43,6 +45,17 @@
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
+                <li class="nav-item" id="notification_li">
+                    <span id="notification_count">3</span>
+                    <a class="nav-link" href="#" id="notificationLink">Thông báo</a>
+
+                    <div id="notificationContainer">
+                        <div id="notificationTitle">Thông báo</div>
+                        <div id="notificationsBody" class="notifications">
+                        </div>
+                        <div id="notificationFooter"><a href="#">See All</a></div>
+                    </div>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
