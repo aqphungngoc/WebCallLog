@@ -86,7 +86,7 @@
                     <h5>Gửi mô tả chi tiết lỗi cho chúng tôi!</h5>
                     <label for="ErrorTitle">Tiêu đề:</label>
                     <textarea id="errortitle" class="form-control" rows="1" placeholder="Tiêu đề" required autofocus></textarea>
-                    <input type="text" id="errortitle" class="form-control" placeholder="Gắn thẻ lỗi" data-role="tagsinput" value="jQuery,Script,Net">
+                    <input type="text" id="errortag" class="form-control" placeholder="Gắn thẻ lỗi" data-role="tagsinput" value="java,jquery,c">
                     <label for="ErrorComment">Mô tả lỗi:</label>
                     <textarea class="form-control" rows="8" id="errorcomment" placeholder="Mô tả"></textarea>
                     <button class="btn btn-lg btn-primary" type="submit">Báo lỗi</button>
@@ -102,7 +102,24 @@
                     <input type="button" class="btn btn-info custom-btn" value="Khác..." id="other">
                 </div>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#Er1').click(function() {
+                        var value = $("#errortag").val().toString() + "," + $("#Er1").val().toString();
+                        $('#errortag').val(value);
+                        alert($("#errortag").val());
+                    });
+                    // $("#Er1").click(function() {
+                    //     var value = $("#errortag").val().toString() + "," + $("#Er1").val().toString();
+                    //     $("#errortag").val(value);
+                    //     alert($("#errortag").val());
+                    // });
+                    // $('#errortag').tagsinput('add', {
+                    //     "value": "jQuery"
+                    // });
 
+                });
+            </script>
 
 
         </div>
